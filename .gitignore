@@ -3,5 +3,6 @@
 
 # production
 /dist
-apiKey
+apiKey.js
+
 
