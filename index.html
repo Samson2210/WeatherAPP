@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <title>Weather App | Know your Weather</title>
+</head>
+
+<body class="h-full bg-gradient-to-br from-blue-400 to-emerald-400 bg-no-repeat bg-cover">
+  <!-- Search Bar  -->
+  <form class="m-auto p-5 " id="search">
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="flex justify-center items-center">
+      <input type="search" id="city"
+        class="block w-full md:w-1/2 p-4 -mr-20 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Search Delhi, Mumbai..." required>
+      <button type="submit" id="submit"
+        class=" text-white bg-green-600 hover:bg-cyan-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+    </div>
+  </form>
+
+<!-- main  -->
+<div class="city text-center text-5xl text-white font-semibold " id="cityName"></div>
+<div class="container max-w-sm mx-auto drop-shadow-md rounded-3xl">
+  <a href="#">
+      <img class="rounded-t-lg" src="/assert/weather1.png" alt="" />
+  </a>
+  <div class="mx-auto">
+    <p class=" text-7xl md:text-8xl -mt-20 p-5 font-semibold text-gray-50 text-center "><span  id="temp">00</span><small
+      class="text-body-secondary fw-light"><span>&#8451;</span></small></p>
+  </div>
+  <div class="flex justify-between mx-3">
+    <div class="wind flex justify-center items-center space-x-2 p-2 text-white text-2xl font-semibold"><img height="50" width="80" src="assert/wind.png" alt=""><span id="wind_speed">00</span><small
+      class="text-body-secondary fw-light mr-10">km/hr</small></div>
+    <div class="humidity mx-2 flex justify-center items-center space-x-2 p-2 text-white text-2xl font-semibold"><img height="50" width="80" src="assert/moisture.png" alt=""><span  id="humidity">00</span>%</div>
+  </div>
+</div>
+<script src="./script.js" type="module"></script>
+</body>
+
+</html>
